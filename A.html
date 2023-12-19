@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, instial-scale=1.0">
+        <title>Lolo</title>
+        <link rel="stylesheet" href="a.css">
+        <!---google fonts css link--->
+        <!---<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        ---><link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;500&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <h2 class="logo">Lolo</h2>
+            <nav class="navigation">
+                <a href="#" class="active">Home</a>
+                <a href="#">Lolo?</a>
+                <a href="#">Art</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        
+        <section class="LoloPearl">
+            <img src="1.png" id="1">
+            <img src="2.png" id="she">
+            <img src="3.png" id="3">
+            <img src="4.png" id="lee">
+            <h2 id="text">The Pearl Girl</h2>
+            <img src="5.png" id="see">
+            <img src="6.png" id="6">
+        </section>
+
+        <section class="about">
+            <h2>Who is Lolo?</h2>
+            <p>
+                <br>
+                
+                </br>
+                
+                Lolo is character desined by me, that resample the feealing I go through.
+                    As she also help breings me joy and happnes due to her smiley eyes.
+                    This charcter had gone through a lot of time being modifyed to this last versions. You can find the old version in the art work.
+                    I've nade this character lolo because sshe look like lolo and lolo means pearl in arabic. 
+                    There is a lot of diffrent types of pearls with diffrent colors and shapes, so this is the one of the pearls versions that are reslased now.
+                    Now we "Me and My self" are working on other versions of Lolo the pearl girl; wiht diffrent concepts.
+                </p>
+        </section>
+
+        <!---custom js link
+       <script src="a.js"></script>--->
+
+       <script>
+        let text = document.getElementById('text');
+        /*let she = document.getElementById('she');*/
+        let lee = document.getElementById('lee');
+        let see = document.getElementById('see');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function() {
+        let value =window.scrollY;
+        text.style.marginTop = value * 1.5 + 'px';
+        /*she.style.left = value * 1 + 'px';*/
+        lee.style.left = value * 1.5 + 'px';
+        see.style.left = value * -1.5 + 'px';
+        header.style.top = value * 0.5 + 'px';
+})
+       </script>
+
+    </body>
+</html>

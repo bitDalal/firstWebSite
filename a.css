@@ -1,0 +1,92 @@
+*{
+    /*font-family: 'Montserrat Alternates', sans-serif;*/
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #87b8fe;
+    min-height: 100vh;
+    /*overflow: hidden;*/
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2em;
+    color: aliceblue;
+    pointer-events: none;
+}
+
+.navigation a{
+    font-size: 1em;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.navigation a:hover, .navigation a.active{
+    background: aliceblue;
+    color: #87b8fe;
+}
+.LoloPearl{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: #b1d1ff;
+    text-shadow: 2px 2px 4px rgba(46, 45, 45, 0.5);
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #b6a5c7, transparent);
+    z-index: 1000;
+
+}
+.LoloPearl img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.about{
+    position: relative;
+    background: #b6a5c7;
+    padding: 100px;
+}
+.about h2{
+    font-size: 3em;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+.about p{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2em;
+    color: aliceblue;
+    font-weight: 300;
+}
